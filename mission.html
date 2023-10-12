@@ -5,80 +5,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="hero"> 
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="Image/Donator IIZ1.mp4" type="video/mp4">
-        </video>
-        <nav>
-            <div class="logo">
-                <a href="index.html" title='Return to home page'>    
-                    <img src="Image/Color logo - no background.png" class="logo">
-                </a>
-            </div>
-            <ul>
-                <li><a href="connect.html">CONNECT</a></li>
-            </ul>
-        </nav>
-            <section class="home">
-                <div class="container">
-                   <div class="row">
-                       <div class="home-text">
-                            <h1>Together</h1>
-                            <p class="animate-text">
-                               <span>Visualizing</span>
-                               <span>Victorious</span>
-                               <span>Maximizing</span>
-                               <span>Tireless</span>
-                               <span>Working Hard</span>
-                               <span>Stronger</span>
-                               <span>In Pain</span>
-                               <span>In Business</span>
-                               <span>To The End</span>
-                            </p>
-                       </div>
-                   </div>
-                </div>
-            </section>
-            <script>
-                const txts=document.querySelector(".animate-text").children,
-                      txtsLen=txts.length;
-                  let index=0;
-                 const textInTimer=5000,
-                       textOutTimer=1800;
-       
-                function animateText() {
-                   for(let i=0; i<txtsLen; i++){
-                     txts[i].classList.remove("text-in","text-out");  
-                   }
-                   txts[index].classList.add("text-in");
-       
-                   setTimeout(function(){
-                       txts[index].classList.add("text-out");              
-                   },textOutTimer)
-       
-                   setTimeout(function(){
-       
-                     if(index == txtsLen-1){
-                         index=0;
-                       }
-                      else{
-                          index++;
-                        }
-                       animateText();
-                   },textInTimer); 
-                }
-                
-                window.onload=animateText;
-          
-       </script>
-    </div>
-    <footer class="footer">
-        <div class="flex-container">
-            <div class="wrapper">
-                <div class="item item-4"><img src="Image/White logo - no background.png"></div>
-                <div class="item item-3"> | All Rights Reserved | 2023</div>
-            </div>
-        </div>
-      </footer>
+    <video autoplay loop muted class="back-video">
+      <source src="Image/Donator IIZ1.mp4" type="video/mp4">
+    </video>
+    <header>
+      <div class="navbar">
+          <a href="index.html"><img src="Image/Color logo - no background.png" class="logo" onclick="index.html"></a>
+              <nav>
+                  <ul id="menuList"> 
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="#">MISSION</a></li>
+                      <li><a href="connect.html">CONNECT</a></li>
+                  </ul>
+              </nav>
+          <img src="Image/menu.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+    </header>
+    <section class="banner-text">
+        <h4>Together</h4>
+        <h5></h5>     
+    </section>
+    </main>
+    <footer class="sticky-footer">
+      <div class="footer">
+          <div class="social-links">
+              <img src="Image/White logo - no background.png"> 
+              <img src="Image/All 2023.png"> 
+          </div>
+      </div>
+    </footer>
 </body>
 </html>

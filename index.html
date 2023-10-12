@@ -5,33 +5,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="hero"> 
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="Image/Donator IB.mp4" type="video/mp4">
-        </video>
-        <nav>
-            <div class="logo">
-                <a href="index.html" title='Return to home page'>    
-                    <img src="Image/Color logo - no background.png" class="logo">
-                </a>
-            </div>
-            <ul>
-                <li><a href="mission.html">MISSION</a></li>
-                <li><a href="connect.html">CONNECT</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div class="item item-1">Live Your</div>
-            <div class="item item-2">Dream</div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="flex-container">
-            <div class="wrapper">
-                <div class="item item-4"><img src="Image/White logo - no background.png"></div>
-                <div class="item item-3"> | All Rights Reserved | 2023</div>
-            </div>
-        </div>
-      </footer>
+    <video autoplay loop muted class="back-video">
+      <source src="Image/Donator IB.mp4" type="video/mp4">
+    </video>
+    <header>
+      <div class="navbar">
+          <img src="Image/Color logo - no background.png" class="logo" onclick="index.html">
+              <nav>
+                  <ul id="menuList"> 
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="mission.html">MISSION</a></li>
+                      <li><a href="connect.html">CONNECT</a></li>
+                  </ul>
+              </nav>
+          <img src="Image/menu.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+    </header>
+    <main class="main-1">
+      <h1>Live Your</h1>
+      <h2>Dream</h2>
+    </main>
+    <footer class="sticky-footer">
+      <div class="footer">
+          <div class="social-links">
+              <img src="Image/White logo - no background.png"> 
+              <img src="Image/All 2023.png"> 
+          </div>
+      </div>
+    </footer>
 </body>
 </html>
